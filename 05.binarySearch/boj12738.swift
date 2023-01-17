@@ -1,6 +1,7 @@
 /*
 boj 12738
 binary search
+https://www.acmicpc.net/problem/12738
 
 문제
 수열 A가 주어졌을 때, 가장 긴 증가하는 부분 수열을 구하는 프로그램을 작성하시오.
@@ -38,6 +39,7 @@ func lowerBound(s: Int, e: Int, target: Int) -> Int {
 
 var res: [Int] = []
 
+// solve
 for num in arr {
     if res.count == 0 {
         res.append(num)
