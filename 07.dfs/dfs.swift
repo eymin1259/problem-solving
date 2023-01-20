@@ -21,20 +21,20 @@ var graph : [[Int]] = [
 var dfsVisited = [Bool](repeating: false, count: graph.count)
 
 // dfs 함수
-func dfs(startNode:Int) {
+func dfs(startNode: Int) {
   dfsVisited[startNode] = true
   print(startNode, terminator: " ")
   var adjacents = graph[startNode]
   for adjacent in adjacents {
     if dfsVisited[adjacent] == false {
-      dfs(startNode:adjacent)
+      dfs(startNode: adjacent)
     }
   }
 }
 
 func dfsStart() {
   print("dfs start")
-  dfs(startNode:1)
+  dfs(startNode: 1)
   print("")
   print("dfs end")
 }
