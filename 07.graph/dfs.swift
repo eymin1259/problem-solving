@@ -6,7 +6,7 @@ dfs sudo
 
 import Foundation
 
-// 그래프는 인접행렬로 표현
+// 그래프는 인접리스트로 표현
 var graph : [[Int]] = [
   [],
   [2,3,8],
